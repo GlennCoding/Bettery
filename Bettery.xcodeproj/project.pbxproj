@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA3E3A1A24DA0E7400CCE0A9 /* Homescreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1924DA0E7400CCE0A9 /* Homescreen.storyboard */; };
+		CA3E3A1C24DA0E9800CCE0A9 /* Devices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1B24DA0E9800CCE0A9 /* Devices.storyboard */; };
+		CA3E3A2024DA108E00CCE0A9 /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */; };
+		CA3E3A2524DA183A00CCE0A9 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E3A2424DA183A00CCE0A9 /* Devices.swift */; };
+		CA3E3A2724DA1B4400CCE0A9 /* Charging.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A2624DA1B4400CCE0A9 /* Charging.storyboard */; };
+		CA3E3A2924DA1BD000CCE0A9 /* Charging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */; };
 		CA7DFA3E24DA05FD00B80F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFA3D24DA05FD00B80F18 /* AppDelegate.swift */; };
 		CA7DFA4024DA05FD00B80F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFA3F24DA05FD00B80F18 /* SceneDelegate.swift */; };
 		CA7DFA4224DA05FD00B80F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFA4124DA05FD00B80F18 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA3E3A1924DA0E7400CCE0A9 /* Homescreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homescreen.storyboard; sourceTree = "<group>"; };
+		CA3E3A1B24DA0E9800CCE0A9 /* Devices.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Devices.storyboard; sourceTree = "<group>"; };
+		CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
+		CA3E3A2424DA183A00CCE0A9 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
+		CA3E3A2624DA1B4400CCE0A9 /* Charging.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Charging.storyboard; sourceTree = "<group>"; };
+		CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charging.swift; sourceTree = "<group>"; };
 		CA7DFA3A24DA05FD00B80F18 /* Bettery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bettery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7DFA3D24DA05FD00B80F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA7DFA3F24DA05FD00B80F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA3E3A1524DA0DFB00CCE0A9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CA7DFA4324DA05FD00B80F18 /* Main.storyboard */,
+				CA3E3A1924DA0E7400CCE0A9 /* Homescreen.storyboard */,
+				CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */,
+				CA3E3A1B24DA0E9800CCE0A9 /* Devices.storyboard */,
+				CA3E3A2424DA183A00CCE0A9 /* Devices.swift */,
+				CA3E3A2624DA1B4400CCE0A9 /* Charging.storyboard */,
+				CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		CA7DFA3124DA05FD00B80F18 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +82,10 @@
 		CA7DFA3C24DA05FD00B80F18 /* Bettery */ = {
 			isa = PBXGroup;
 			children = (
+				CA3E3A1524DA0DFB00CCE0A9 /* Storyboards */,
 				CA7DFA3D24DA05FD00B80F18 /* AppDelegate.swift */,
 				CA7DFA3F24DA05FD00B80F18 /* SceneDelegate.swift */,
 				CA7DFA4124DA05FD00B80F18 /* ViewController.swift */,
-				CA7DFA4324DA05FD00B80F18 /* Main.storyboard */,
 				CA7DFA4624DA060100B80F18 /* Assets.xcassets */,
 				CA7DFA4824DA060100B80F18 /* LaunchScreen.storyboard */,
 				CA7DFA4B24DA060100B80F18 /* Info.plist */,
@@ -126,7 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA7DFA4A24DA060100B80F18 /* LaunchScreen.storyboard in Resources */,
+				CA3E3A1A24DA0E7400CCE0A9 /* Homescreen.storyboard in Resources */,
 				CA7DFA4724DA060100B80F18 /* Assets.xcassets in Resources */,
+				CA3E3A2724DA1B4400CCE0A9 /* Charging.storyboard in Resources */,
+				CA3E3A1C24DA0E9800CCE0A9 /* Devices.storyboard in Resources */,
 				CA7DFA4524DA05FD00B80F18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3E3A2024DA108E00CCE0A9 /* Homescreen.swift in Sources */,
 				CA7DFA4224DA05FD00B80F18 /* ViewController.swift in Sources */,
+				CA3E3A2924DA1BD000CCE0A9 /* Charging.swift in Sources */,
+				CA3E3A2524DA183A00CCE0A9 /* Devices.swift in Sources */,
 				CA7DFA3E24DA05FD00B80F18 /* AppDelegate.swift in Sources */,
 				CA7DFA4024DA05FD00B80F18 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,7 +316,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7292765P2;
 				INFOPLIST_FILE = Bettery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = thegglabel.Bettery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,7 +336,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7292765P2;
 				INFOPLIST_FILE = Bettery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = thegglabel.Bettery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
