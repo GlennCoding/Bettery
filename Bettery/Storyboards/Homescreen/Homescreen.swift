@@ -15,16 +15,28 @@ class Homescreen: UIViewController {
     
     
     var batteryLevel: Float { UIDevice.current.batteryLevel }
+    var batteryState: UIDevice.BatteryState { UIDevice.current.batteryState }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print(batteryLevel)
         CurrentBatteryPercentage.text = "\(Int(batteryLevel * 100))%"
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(batteryStateDidChange), name: UIDevice.batteryStateDidChangeNotification, object: nil)
+
     }
     
-    @objc func batteryLevelDidChange(_ notification: Notification) {
-        print(batteryLevel)
+    @objc func batteryStateDidChange(_ notification: Notification) {
+        switch batteryState {
+        case .unplugged, .unknown:
+            print("not charging")
+        case .charging, .full:
+            print("charging or full")
+            CurrentBatteryPercentage.textColor = UIColor.green
+        @unknown default:
+            fatalError()
+        }
     }
     
     

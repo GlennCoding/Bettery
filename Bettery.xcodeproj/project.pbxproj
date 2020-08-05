@@ -7,31 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA22FF8124DAEA010017FE41 /* BatteryTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA22FF8024DAEA010017FE41 /* BatteryTest.storyboard */; };
+		CA22FF8324DAEA1A0017FE41 /* BatteryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */; };
 		CA3E3A1A24DA0E7400CCE0A9 /* Homescreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1924DA0E7400CCE0A9 /* Homescreen.storyboard */; };
 		CA3E3A1C24DA0E9800CCE0A9 /* Devices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1B24DA0E9800CCE0A9 /* Devices.storyboard */; };
 		CA3E3A2024DA108E00CCE0A9 /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */; };
 		CA3E3A2524DA183A00CCE0A9 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E3A2424DA183A00CCE0A9 /* Devices.swift */; };
 		CA3E3A2724DA1B4400CCE0A9 /* Charging.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A2624DA1B4400CCE0A9 /* Charging.storyboard */; };
 		CA3E3A2924DA1BD000CCE0A9 /* Charging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */; };
+		CA6ED99524DB1E83000A5043 /* StartTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6ED99424DB1E83000A5043 /* StartTimer.swift */; };
 		CA7DFA3E24DA05FD00B80F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFA3D24DA05FD00B80F18 /* AppDelegate.swift */; };
 		CA7DFA4024DA05FD00B80F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFA3F24DA05FD00B80F18 /* SceneDelegate.swift */; };
-		CA7DFA4224DA05FD00B80F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFA4124DA05FD00B80F18 /* ViewController.swift */; };
 		CA7DFA4524DA05FD00B80F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7DFA4324DA05FD00B80F18 /* Main.storyboard */; };
 		CA7DFA4724DA060100B80F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7DFA4624DA060100B80F18 /* Assets.xcassets */; };
 		CA7DFA4A24DA060100B80F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7DFA4824DA060100B80F18 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA22FF8024DAEA010017FE41 /* BatteryTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatteryTest.storyboard; sourceTree = "<group>"; };
+		CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTest.swift; sourceTree = "<group>"; };
 		CA3E3A1924DA0E7400CCE0A9 /* Homescreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homescreen.storyboard; sourceTree = "<group>"; };
 		CA3E3A1B24DA0E9800CCE0A9 /* Devices.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Devices.storyboard; sourceTree = "<group>"; };
 		CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
 		CA3E3A2424DA183A00CCE0A9 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
 		CA3E3A2624DA1B4400CCE0A9 /* Charging.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Charging.storyboard; sourceTree = "<group>"; };
 		CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charging.swift; sourceTree = "<group>"; };
+		CA6ED99424DB1E83000A5043 /* StartTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTimer.swift; sourceTree = "<group>"; };
 		CA7DFA3A24DA05FD00B80F18 /* Bettery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bettery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7DFA3D24DA05FD00B80F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA7DFA3F24DA05FD00B80F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA7DFA4124DA05FD00B80F18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA7DFA4424DA05FD00B80F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA7DFA4624DA060100B80F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA7DFA4924DA060100B80F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,16 +53,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA22FF8424DAEA2E0017FE41 /* Homescreen */ = {
+			isa = PBXGroup;
+			children = (
+				CA3E3A1924DA0E7400CCE0A9 /* Homescreen.storyboard */,
+				CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */,
+			);
+			path = Homescreen;
+			sourceTree = "<group>";
+		};
+		CA22FF8524DAEA3D0017FE41 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				CA3E3A1B24DA0E9800CCE0A9 /* Devices.storyboard */,
+				CA3E3A2424DA183A00CCE0A9 /* Devices.swift */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		CA22FF8624DAEA5B0017FE41 /* BatteryTest */ = {
+			isa = PBXGroup;
+			children = (
+				CA22FF8024DAEA010017FE41 /* BatteryTest.storyboard */,
+				CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */,
+				CA6ED99424DB1E83000A5043 /* StartTimer.swift */,
+			);
+			path = BatteryTest;
+			sourceTree = "<group>";
+		};
+		CA22FF8724DAEA6F0017FE41 /* Charging */ = {
+			isa = PBXGroup;
+			children = (
+				CA3E3A2624DA1B4400CCE0A9 /* Charging.storyboard */,
+				CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */,
+			);
+			path = Charging;
+			sourceTree = "<group>";
+		};
 		CA3E3A1524DA0DFB00CCE0A9 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				CA7DFA4324DA05FD00B80F18 /* Main.storyboard */,
-				CA3E3A1924DA0E7400CCE0A9 /* Homescreen.storyboard */,
-				CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */,
-				CA3E3A1B24DA0E9800CCE0A9 /* Devices.storyboard */,
-				CA3E3A2424DA183A00CCE0A9 /* Devices.swift */,
-				CA3E3A2624DA1B4400CCE0A9 /* Charging.storyboard */,
-				CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */,
+				CA22FF8424DAEA2E0017FE41 /* Homescreen */,
+				CA22FF8524DAEA3D0017FE41 /* Devices */,
+				CA22FF8624DAEA5B0017FE41 /* BatteryTest */,
+				CA22FF8724DAEA6F0017FE41 /* Charging */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -85,7 +124,6 @@
 				CA3E3A1524DA0DFB00CCE0A9 /* Storyboards */,
 				CA7DFA3D24DA05FD00B80F18 /* AppDelegate.swift */,
 				CA7DFA3F24DA05FD00B80F18 /* SceneDelegate.swift */,
-				CA7DFA4124DA05FD00B80F18 /* ViewController.swift */,
 				CA7DFA4624DA060100B80F18 /* Assets.xcassets */,
 				CA7DFA4824DA060100B80F18 /* LaunchScreen.storyboard */,
 				CA7DFA4B24DA060100B80F18 /* Info.plist */,
@@ -151,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA22FF8124DAEA010017FE41 /* BatteryTest.storyboard in Resources */,
 				CA7DFA4A24DA060100B80F18 /* LaunchScreen.storyboard in Resources */,
 				CA3E3A1A24DA0E7400CCE0A9 /* Homescreen.storyboard in Resources */,
 				CA7DFA4724DA060100B80F18 /* Assets.xcassets in Resources */,
@@ -168,7 +207,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA3E3A2024DA108E00CCE0A9 /* Homescreen.swift in Sources */,
-				CA7DFA4224DA05FD00B80F18 /* ViewController.swift in Sources */,
+				CA6ED99524DB1E83000A5043 /* StartTimer.swift in Sources */,
+				CA22FF8324DAEA1A0017FE41 /* BatteryTest.swift in Sources */,
 				CA3E3A2924DA1BD000CCE0A9 /* Charging.swift in Sources */,
 				CA3E3A2524DA183A00CCE0A9 /* Devices.swift in Sources */,
 				CA7DFA3E24DA05FD00B80F18 /* AppDelegate.swift in Sources */,

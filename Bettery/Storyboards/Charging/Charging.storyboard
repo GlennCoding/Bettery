@@ -15,42 +15,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKd-l5-QB2">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="gEK-Up-TUc" kind="show" id="1mc-D4-bSh"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AIY-s3-fcF">
+                                <rect key="frame" x="142" y="435" width="130.5" height="26.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a device:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiJ-4D-l3W">
+                                        <rect key="frame" x="0.0" y="0.0" width="130.5" height="26.5"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="yCZ-YQ-UzT" appends="YES" id="V57-5v-JL6"/>
+                                        </connections>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="GKd-l5-QB2" firstAttribute="centerY" secondItem="ASN-Vn-98Y" secondAttribute="centerY" id="I2Q-lg-5D8"/>
-                            <constraint firstItem="GKd-l5-QB2" firstAttribute="centerX" secondItem="ASN-Vn-98Y" secondAttribute="centerX" id="tIp-n2-n5u"/>
+                            <constraint firstItem="AIY-s3-fcF" firstAttribute="centerY" secondItem="ASN-Vn-98Y" secondAttribute="centerY" id="G8j-Qk-9Ev"/>
+                            <constraint firstItem="AIY-s3-fcF" firstAttribute="centerX" secondItem="ASN-Vn-98Y" secondAttribute="centerX" id="e6a-02-sBb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2j2-yf-YWU"/>
                     </view>
                     <navigationItem key="navigationItem" title="Select Devices" id="C4i-5K-CfA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTH-Nr-j1W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yCZ-YQ-UzT"/>
             </objects>
             <point key="canvasLocation" x="-623.1884057971015" y="58.928571428571423"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="0o0-N3-zKQ">
-            <objects>
-                <viewController id="gEK-Up-TUc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jox-7r-uoY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="kl2-La-6DW"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="luL-s7-XSu"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j2Z-uR-UPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="158" y="59"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qr0-lU-bLg">
