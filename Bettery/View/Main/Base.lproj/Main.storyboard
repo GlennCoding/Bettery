@@ -12,6 +12,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="wKK-1q-bBA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1u8-Px-vo0">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -24,20 +25,20 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
-        <!--Homescreen-->
+        <!--HomescreenVC-->
         <scene sceneID="HuO-mM-cm7">
             <objects>
-                <viewControllerPlaceholder storyboardName="Homescreen" id="KMh-aD-shL" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="HomescreenVC" id="KMh-aD-shL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="BI7-VU-5Vo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTc-q7-Fqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-283" y="583"/>
         </scene>
-        <!--Devices-->
+        <!--DevicesVC-->
         <scene sceneID="6fT-ye-3cb">
             <objects>
-                <viewControllerPlaceholder storyboardName="Devices" id="z43-VC-tu0" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="DevicesVC" id="z43-VC-tu0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Alj-OS-XpD"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYn-BG-nfk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

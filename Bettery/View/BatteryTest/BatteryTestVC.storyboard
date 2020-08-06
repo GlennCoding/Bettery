@@ -48,7 +48,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gor-3H-5af" userLabel="Current Battery Percentage Input Field">
                                         <rect key="frame" x="0.0" y="222.5" width="315" height="34"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
@@ -148,23 +148,27 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Uv2-ab-fhp" userLabel="Timer Stack View">
                                 <rect key="frame" x="30" y="298" width="315" height="111"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdm-bS-gVG">
-                                        <rect key="frame" x="94" y="0.0" width="127" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdm-bS-gVG">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="4IC-Bh-ocd"/>
-                                            <constraint firstAttribute="width" constant="126.67" id="QZ5-pf-Yg8"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="10" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-2P-aui">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="5" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-2P-aui">
                                         <rect key="frame" x="-2" y="81" width="319" height="31"/>
+                                        <connections>
+                                            <action selector="sliderChanged:" destination="KzU-Mx-1ni" eventType="valueChanged" id="OUD-pF-FSo"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wdm-bS-gVG" secondAttribute="trailing" id="01w-cW-AQI"/>
                                     <constraint firstAttribute="trailing" secondItem="bzh-2P-aui" secondAttribute="trailing" id="0Ft-W4-5kW"/>
                                     <constraint firstItem="bzh-2P-aui" firstAttribute="leading" secondItem="Uv2-ab-fhp" secondAttribute="leading" id="ROT-EN-Ymm"/>
+                                    <constraint firstItem="wdm-bS-gVG" firstAttribute="leading" secondItem="Uv2-ab-fhp" secondAttribute="leading" id="Ym9-bF-OEW"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -188,6 +192,10 @@
                     <navigationItem key="navigationItem" title="Start Timer" id="xUy-eF-sC7">
                         <barButtonItem key="backBarButtonItem" title="Back" id="x4w-7N-dxn"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="timeSlider" destination="bzh-2P-aui" id="Is1-a8-AcH"/>
+                        <outlet property="timerLabel" destination="wdm-bS-gVG" id="80k-ZG-ctS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmT-2Y-AXv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -21,7 +21,12 @@ class Homescreen: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print(batteryLevel)
+        if batteryLevel == -1.0 {
+            CurrentBatteryPercentage.text = "100%"
+        }
+        else {
         CurrentBatteryPercentage.text = "\(Int(batteryLevel * 100))%"
+        }
         
         NotificationCenter.default.addObserver(self, selector: #selector(batteryStateDidChange), name: UIDevice.batteryStateDidChangeNotification, object: nil)
 

@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA22FF8124DAEA010017FE41 /* BatteryTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA22FF8024DAEA010017FE41 /* BatteryTest.storyboard */; };
+		CA22FF8124DAEA010017FE41 /* BatteryTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA22FF8024DAEA010017FE41 /* BatteryTestVC.storyboard */; };
 		CA22FF8324DAEA1A0017FE41 /* BatteryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */; };
-		CA3E3A1A24DA0E7400CCE0A9 /* Homescreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1924DA0E7400CCE0A9 /* Homescreen.storyboard */; };
-		CA3E3A1C24DA0E9800CCE0A9 /* Devices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1B24DA0E9800CCE0A9 /* Devices.storyboard */; };
+		CA3E3A1A24DA0E7400CCE0A9 /* HomescreenVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1924DA0E7400CCE0A9 /* HomescreenVC.storyboard */; };
+		CA3E3A1C24DA0E9800CCE0A9 /* DevicesVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1B24DA0E9800CCE0A9 /* DevicesVC.storyboard */; };
 		CA3E3A2024DA108E00CCE0A9 /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */; };
 		CA3E3A2524DA183A00CCE0A9 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E3A2424DA183A00CCE0A9 /* Devices.swift */; };
-		CA3E3A2724DA1B4400CCE0A9 /* Charging.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A2624DA1B4400CCE0A9 /* Charging.storyboard */; };
+		CA3E3A2724DA1B4400CCE0A9 /* ChargingVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A2624DA1B4400CCE0A9 /* ChargingVC.storyboard */; };
 		CA3E3A2924DA1BD000CCE0A9 /* Charging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */; };
+		CA451B1924DC5D3900CF5E3C /* Bettery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA451B1724DC5D3900CF5E3C /* Bettery.xcdatamodeld */; };
+		CA451B2424DC670B00CF5E3C /* Device+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA451B2224DC670B00CF5E3C /* Device+CoreDataClass.swift */; };
+		CA451B2524DC670B00CF5E3C /* Device+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA451B2324DC670B00CF5E3C /* Device+CoreDataProperties.swift */; };
 		CA6ED99524DB1E83000A5043 /* StartTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6ED99424DB1E83000A5043 /* StartTimer.swift */; };
 		CA7DFA3E24DA05FD00B80F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFA3D24DA05FD00B80F18 /* AppDelegate.swift */; };
 		CA7DFA4024DA05FD00B80F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFA3F24DA05FD00B80F18 /* SceneDelegate.swift */; };
@@ -24,14 +27,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA22FF8024DAEA010017FE41 /* BatteryTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatteryTest.storyboard; sourceTree = "<group>"; };
+		CA22FF8024DAEA010017FE41 /* BatteryTestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatteryTestVC.storyboard; sourceTree = "<group>"; };
 		CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTest.swift; sourceTree = "<group>"; };
-		CA3E3A1924DA0E7400CCE0A9 /* Homescreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homescreen.storyboard; sourceTree = "<group>"; };
-		CA3E3A1B24DA0E9800CCE0A9 /* Devices.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Devices.storyboard; sourceTree = "<group>"; };
+		CA3E3A1924DA0E7400CCE0A9 /* HomescreenVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomescreenVC.storyboard; sourceTree = "<group>"; };
+		CA3E3A1B24DA0E9800CCE0A9 /* DevicesVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DevicesVC.storyboard; sourceTree = "<group>"; };
 		CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
 		CA3E3A2424DA183A00CCE0A9 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
-		CA3E3A2624DA1B4400CCE0A9 /* Charging.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Charging.storyboard; sourceTree = "<group>"; };
+		CA3E3A2624DA1B4400CCE0A9 /* ChargingVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChargingVC.storyboard; sourceTree = "<group>"; };
 		CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charging.swift; sourceTree = "<group>"; };
+		CA451B1824DC5D3900CF5E3C /* Bettery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bettery.xcdatamodel; sourceTree = "<group>"; };
+		CA451B2224DC670B00CF5E3C /* Device+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CA451B2324DC670B00CF5E3C /* Device+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CA6ED99424DB1E83000A5043 /* StartTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTimer.swift; sourceTree = "<group>"; };
 		CA7DFA3A24DA05FD00B80F18 /* Bettery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bettery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7DFA3D24DA05FD00B80F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +62,7 @@
 		CA22FF8424DAEA2E0017FE41 /* Homescreen */ = {
 			isa = PBXGroup;
 			children = (
-				CA3E3A1924DA0E7400CCE0A9 /* Homescreen.storyboard */,
+				CA3E3A1924DA0E7400CCE0A9 /* HomescreenVC.storyboard */,
 				CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */,
 			);
 			path = Homescreen;
@@ -65,7 +71,7 @@
 		CA22FF8524DAEA3D0017FE41 /* Devices */ = {
 			isa = PBXGroup;
 			children = (
-				CA3E3A1B24DA0E9800CCE0A9 /* Devices.storyboard */,
+				CA3E3A1B24DA0E9800CCE0A9 /* DevicesVC.storyboard */,
 				CA3E3A2424DA183A00CCE0A9 /* Devices.swift */,
 			);
 			path = Devices;
@@ -74,7 +80,7 @@
 		CA22FF8624DAEA5B0017FE41 /* BatteryTest */ = {
 			isa = PBXGroup;
 			children = (
-				CA22FF8024DAEA010017FE41 /* BatteryTest.storyboard */,
+				CA22FF8024DAEA010017FE41 /* BatteryTestVC.storyboard */,
 				CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */,
 				CA6ED99424DB1E83000A5043 /* StartTimer.swift */,
 			);
@@ -84,22 +90,43 @@
 		CA22FF8724DAEA6F0017FE41 /* Charging */ = {
 			isa = PBXGroup;
 			children = (
-				CA3E3A2624DA1B4400CCE0A9 /* Charging.storyboard */,
+				CA3E3A2624DA1B4400CCE0A9 /* ChargingVC.storyboard */,
 				CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */,
 			);
 			path = Charging;
 			sourceTree = "<group>";
 		};
-		CA3E3A1524DA0DFB00CCE0A9 /* Storyboards */ = {
+		CA3E3A1524DA0DFB00CCE0A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CA7DFA4324DA05FD00B80F18 /* Main.storyboard */,
+				CAF27EA424DC267200B1E45F /* Main */,
 				CA22FF8424DAEA2E0017FE41 /* Homescreen */,
 				CA22FF8524DAEA3D0017FE41 /* Devices */,
 				CA22FF8624DAEA5B0017FE41 /* BatteryTest */,
 				CA22FF8724DAEA6F0017FE41 /* Charging */,
 			);
-			path = Storyboards;
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA451AC624DC272200CF5E3C /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				CA7DFA3D24DA05FD00B80F18 /* AppDelegate.swift */,
+				CA7DFA3F24DA05FD00B80F18 /* SceneDelegate.swift */,
+				CA451B1724DC5D3900CF5E3C /* Bettery.xcdatamodeld */,
+				CA7DFA4624DA060100B80F18 /* Assets.xcassets */,
+				CA7DFA4B24DA060100B80F18 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		CA46AA3324DB675400FB9045 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA451B2224DC670B00CF5E3C /* Device+CoreDataClass.swift */,
+				CA451B2324DC670B00CF5E3C /* Device+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CA7DFA3124DA05FD00B80F18 = {
@@ -121,14 +148,20 @@
 		CA7DFA3C24DA05FD00B80F18 /* Bettery */ = {
 			isa = PBXGroup;
 			children = (
-				CA3E3A1524DA0DFB00CCE0A9 /* Storyboards */,
-				CA7DFA3D24DA05FD00B80F18 /* AppDelegate.swift */,
-				CA7DFA3F24DA05FD00B80F18 /* SceneDelegate.swift */,
-				CA7DFA4624DA060100B80F18 /* Assets.xcassets */,
-				CA7DFA4824DA060100B80F18 /* LaunchScreen.storyboard */,
-				CA7DFA4B24DA060100B80F18 /* Info.plist */,
+				CA46AA3324DB675400FB9045 /* Model */,
+				CA3E3A1524DA0DFB00CCE0A9 /* View */,
+				CA451AC624DC272200CF5E3C /* Supporting */,
 			);
 			path = Bettery;
+			sourceTree = "<group>";
+		};
+		CAF27EA424DC267200B1E45F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CA7DFA4324DA05FD00B80F18 /* Main.storyboard */,
+				CA7DFA4824DA060100B80F18 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,12 +222,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA22FF8124DAEA010017FE41 /* BatteryTest.storyboard in Resources */,
+				CA22FF8124DAEA010017FE41 /* BatteryTestVC.storyboard in Resources */,
 				CA7DFA4A24DA060100B80F18 /* LaunchScreen.storyboard in Resources */,
-				CA3E3A1A24DA0E7400CCE0A9 /* Homescreen.storyboard in Resources */,
+				CA3E3A1A24DA0E7400CCE0A9 /* HomescreenVC.storyboard in Resources */,
 				CA7DFA4724DA060100B80F18 /* Assets.xcassets in Resources */,
-				CA3E3A2724DA1B4400CCE0A9 /* Charging.storyboard in Resources */,
-				CA3E3A1C24DA0E9800CCE0A9 /* Devices.storyboard in Resources */,
+				CA3E3A2724DA1B4400CCE0A9 /* ChargingVC.storyboard in Resources */,
+				CA3E3A1C24DA0E9800CCE0A9 /* DevicesVC.storyboard in Resources */,
 				CA7DFA4524DA05FD00B80F18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +245,10 @@
 				CA3E3A2924DA1BD000CCE0A9 /* Charging.swift in Sources */,
 				CA3E3A2524DA183A00CCE0A9 /* Devices.swift in Sources */,
 				CA7DFA3E24DA05FD00B80F18 /* AppDelegate.swift in Sources */,
+				CA451B2424DC670B00CF5E3C /* Device+CoreDataClass.swift in Sources */,
+				CA451B2524DC670B00CF5E3C /* Device+CoreDataProperties.swift in Sources */,
 				CA7DFA4024DA05FD00B80F18 /* SceneDelegate.swift in Sources */,
+				CA451B1924DC5D3900CF5E3C /* Bettery.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +395,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7292765P2;
-				INFOPLIST_FILE = Bettery/Info.plist;
+				INFOPLIST_FILE = Bettery/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,7 +415,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7292765P2;
-				INFOPLIST_FILE = Bettery/Info.plist;
+				INFOPLIST_FILE = Bettery/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,6 +450,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA451B1724DC5D3900CF5E3C /* Bettery.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA451B1824DC5D3900CF5E3C /* Bettery.xcdatamodel */,
+			);
+			currentVersion = CA451B1824DC5D3900CF5E3C /* Bettery.xcdatamodel */;
+			path = Bettery.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CA7DFA3224DA05FD00B80F18 /* Project object */;
 }

@@ -10,13 +10,23 @@ import UIKit
 
 class StartTimer: UIViewController {
 
+    @IBOutlet weak var timerLabel: UILabel!
+    
+    @IBOutlet weak var timeSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func sliderChanged(_ sender: UISlider) {
+        
+        let sliderValue = Int(timeSlider.value)
+        timerLabel.text = ("\(sliderValue):00")
+        
+    }
+    
     /*
     // MARK: - Navigation
 
