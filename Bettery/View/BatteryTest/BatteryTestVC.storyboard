@@ -243,16 +243,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pv5-5q-5aD">
-                                <rect key="frame" x="145.5" y="303.5" width="84" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pv5-5q-5aD">
+                                <rect key="frame" x="119.5" y="303.5" width="136" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="XwC-tV-zUM"/>
+                                    <constraint firstAttribute="width" constant="136" id="rP0-P3-wFa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrz-YY-ypH">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrz-YY-ypH">
                                 <rect key="frame" x="30" y="547" width="315" height="45"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -267,26 +268,58 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Save:" destination="Mr6-O4-NLr" eventType="touchUpInside" id="Yva-uJ-h5v"/>
+                                </connections>
                             </button>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fUj-za-09H" userLabel="Battery Input Stack">
+                                <rect key="frame" x="50.5" y="296" width="274" height="75.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Battery Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxY-L1-giL">
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6BR-x3-r3P" userLabel="Current Battery Percentage Input Field">
+                                        <rect key="frame" x="0.0" y="41.5" width="274" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Mr6-O4-NLr" id="hiK-eQ-ehL"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6BR-x3-r3P" secondAttribute="trailing" id="Xfj-p2-9bO"/>
+                                    <constraint firstItem="6BR-x3-r3P" firstAttribute="leading" secondItem="fUj-za-09H" secondAttribute="leading" id="uJj-ut-5gp"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="pv5-5q-5aD" firstAttribute="centerY" secondItem="529-QJ-GqC" secondAttribute="centerY" id="06L-Ij-ap6"/>
                             <constraint firstItem="hg5-sp-QwS" firstAttribute="leading" secondItem="529-QJ-GqC" secondAttribute="leading" constant="30" id="3tU-Aw-ilO"/>
                             <constraint firstItem="qRX-tR-rIu" firstAttribute="bottom" secondItem="zrz-YY-ypH" secondAttribute="bottom" constant="75" id="5ro-cf-Vh8"/>
-                            <constraint firstItem="pv5-5q-5aD" firstAttribute="centerX" secondItem="529-QJ-GqC" secondAttribute="centerX" id="6fq-m8-f3q"/>
                             <constraint firstItem="hg5-sp-QwS" firstAttribute="centerX" secondItem="529-QJ-GqC" secondAttribute="centerX" id="9QP-wG-7et"/>
+                            <constraint firstItem="fUj-za-09H" firstAttribute="centerY" secondItem="529-QJ-GqC" secondAttribute="centerY" id="BgQ-DX-qv1"/>
                             <constraint firstItem="zrz-YY-ypH" firstAttribute="centerX" secondItem="529-QJ-GqC" secondAttribute="centerX" id="GVj-Ih-o6e"/>
+                            <constraint firstItem="fUj-za-09H" firstAttribute="centerX" secondItem="529-QJ-GqC" secondAttribute="centerX" id="Gsk-Yp-Aoc"/>
+                            <constraint firstItem="pv5-5q-5aD" firstAttribute="centerY" secondItem="529-QJ-GqC" secondAttribute="centerY" id="KEx-9A-xHT"/>
                             <constraint firstAttribute="trailing" secondItem="hg5-sp-QwS" secondAttribute="trailing" constant="30" id="NSH-7Z-cTY"/>
                             <constraint firstItem="qRX-tR-rIu" firstAttribute="trailing" secondItem="zrz-YY-ypH" secondAttribute="trailing" constant="30" id="UDK-mk-dKf"/>
                             <constraint firstItem="hg5-sp-QwS" firstAttribute="top" secondItem="qRX-tR-rIu" secondAttribute="top" constant="25" id="ffn-FB-Vi9"/>
+                            <constraint firstItem="pv5-5q-5aD" firstAttribute="centerX" secondItem="529-QJ-GqC" secondAttribute="centerX" id="kGz-sZ-XcL"/>
                             <constraint firstItem="zrz-YY-ypH" firstAttribute="leading" secondItem="qRX-tR-rIu" secondAttribute="leading" constant="30" id="wj3-Du-y3b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qRX-tR-rIu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Active Timer" id="MPT-VT-ro1"/>
                     <connections>
+                        <outlet property="BatteryEnd" destination="6BR-x3-r3P" id="49d-C1-3Z6"/>
+                        <outlet property="BatteryInputStack" destination="fUj-za-09H" id="D6x-Bh-PQh"/>
                         <outlet property="CountDownLabel" destination="pv5-5q-5aD" id="fwB-9t-jiM"/>
+                        <outlet property="HeadlineLabel" destination="hg5-sp-QwS" id="biK-0G-UwM"/>
+                        <outlet property="SaveButton" destination="zrz-YY-ypH" id="iHE-lr-Cft"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ewm-cw-kns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -29,7 +29,7 @@
         <!--All Devices-->
         <scene sceneID="p6P-ZY-h5s">
             <objects>
-                <tableViewController id="FcF-DA-HAc" sceneMemberID="viewController">
+                <tableViewController id="FcF-DA-HAc" customClass="DevicesTVC" customModule="Bettery" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xdc-7U-zh3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,11 +49,25 @@
                             <outlet property="delegate" destination="FcF-DA-HAc" id="pY2-fY-i14"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="All Devices" id="9dr-Rx-cyM"/>
+                    <navigationItem key="navigationItem" title="All Devices" id="9dr-Rx-cyM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hlS-FG-e0g">
+                            <connections>
+                                <segue destination="eC5-QR-8f3" kind="presentation" id="ZLJ-lu-hsa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOz-Bf-Luw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-962" y="-319"/>
+        </scene>
+        <!--BatteryTestVC-->
+        <scene sceneID="OVF-na-rfI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BatteryTestVC" id="eC5-QR-8f3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVb-7n-79M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="-611"/>
         </scene>
     </scenes>
     <resources>
