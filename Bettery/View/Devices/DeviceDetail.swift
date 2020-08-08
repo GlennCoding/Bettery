@@ -24,8 +24,8 @@ class DeviceDetail: UIViewController {
     }
 
     func setUI() {
-        ChargerName.text = device?.chargerName
-        BatteryPerMinute.text = String(describing: device?.batteryPerMinute)
+        ChargerName.text = device!.chargerName
+        BatteryPerMinute.text = "\(device!.batteryPerMinute)"
     }
 
 }

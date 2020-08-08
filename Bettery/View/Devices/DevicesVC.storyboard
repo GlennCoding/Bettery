@@ -95,17 +95,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="kwf-iO-XBv">
                                 <rect key="frame" x="20" y="160" width="374" height="26.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charger Name :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmY-Dy-3fy">
-                                        <rect key="frame" x="0.0" y="0.0" width="235" height="26.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charger Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmY-Dy-3fy">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="26.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="235" id="m33-IS-mcK"/>
+                                            <constraint firstAttribute="width" constant="160" id="5kr-bu-PUm"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charger" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipM-YC-sYs">
-                                        <rect key="frame" x="297" y="0.0" width="77" height="26.5"/>
+                                        <rect key="frame" x="222" y="0.0" width="152" height="26.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="155" id="vwr-qs-13t"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -133,16 +136,39 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-o3-Ag8">
+                                <rect key="frame" x="30" y="693" width="354" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="80I-gJ-Hjh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="gKz-HK-63j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Charge Device">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="FOi-f1-H1h" kind="show" identifier="DetailToCharging" id="nx6-fn-tv9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="mrc-o3-Ag8" firstAttribute="leading" secondItem="PqS-Ft-FDO" secondAttribute="leading" constant="30" id="7xw-KL-hWS"/>
                             <constraint firstItem="PqS-Ft-FDO" firstAttribute="trailing" secondItem="kwf-iO-XBv" secondAttribute="trailing" constant="20" id="Dot-Do-fX9"/>
+                            <constraint firstItem="PqS-Ft-FDO" firstAttribute="bottom" secondItem="mrc-o3-Ag8" secondAttribute="bottom" constant="75" id="HAf-iL-Lef"/>
                             <constraint firstItem="Od1-29-Nw0" firstAttribute="leading" secondItem="zos-6Z-JLt" secondAttribute="leading" constant="20" id="X4b-Rg-DaR"/>
                             <constraint firstItem="kwf-iO-XBv" firstAttribute="top" secondItem="PqS-Ft-FDO" secondAttribute="top" constant="20" id="Yxb-Rk-ckH"/>
                             <constraint firstItem="kwf-iO-XBv" firstAttribute="centerX" secondItem="zos-6Z-JLt" secondAttribute="centerX" id="e6F-Xg-dOs"/>
                             <constraint firstItem="Od1-29-Nw0" firstAttribute="top" secondItem="kwf-iO-XBv" secondAttribute="bottom" constant="10" id="lpg-JC-ceJ"/>
                             <constraint firstAttribute="trailing" secondItem="Od1-29-Nw0" secondAttribute="trailing" constant="20" id="nBz-C7-Icl"/>
                             <constraint firstItem="kwf-iO-XBv" firstAttribute="leading" secondItem="PqS-Ft-FDO" secondAttribute="leading" constant="20" id="nDZ-0H-2Nv"/>
+                            <constraint firstItem="PqS-Ft-FDO" firstAttribute="trailing" secondItem="mrc-o3-Ag8" secondAttribute="trailing" constant="30" id="ufD-7G-mkJ"/>
                             <constraint firstItem="Od1-29-Nw0" firstAttribute="centerX" secondItem="zos-6Z-JLt" secondAttribute="centerX" id="y7B-if-4jx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PqS-Ft-FDO"/>
@@ -164,6 +190,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZVb-7n-79M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-971" y="208"/>
+        </scene>
+        <!--ChargingVC-->
+        <scene sceneID="69f-qM-GI9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChargingVC" id="FOi-f1-H1h" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CzX-ez-aTl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WLN-ia-E3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="-319"/>
         </scene>
     </scenes>
     <resources>

@@ -13,7 +13,7 @@ class Devices: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
-    //var devices: [Device] = []
+    var devices: [Device] = deviceArray!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,14 @@ class Devices: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "DeviceDetail" {
+            let destVC = segue.destination as! DeviceDetail
+            destVC.device = sender as? Device
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
