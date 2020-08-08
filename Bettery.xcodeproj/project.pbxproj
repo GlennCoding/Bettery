@@ -10,6 +10,7 @@
 		CA06F39324DF229E00FFF47D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F39224DF229E00FFF47D /* Constants.swift */; };
 		CA06F39624DF22FB00FFF47D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F39524DF22FB00FFF47D /* Device.swift */; };
 		CA06F39A24DF2E4E00FFF47D /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F39924DF2E4E00FFF47D /* Devices.swift */; };
+		CA06F39C24DF422900FFF47D /* DeviceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F39B24DF422900FFF47D /* DeviceDetail.swift */; };
 		CA22FF8124DAEA010017FE41 /* BatteryTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA22FF8024DAEA010017FE41 /* BatteryTestVC.storyboard */; };
 		CA22FF8324DAEA1A0017FE41 /* BatteryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */; };
 		CA3E3A1A24DA0E7400CCE0A9 /* HomescreenVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1924DA0E7400CCE0A9 /* HomescreenVC.storyboard */; };
@@ -30,6 +31,7 @@
 		CA06F39224DF229E00FFF47D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CA06F39524DF22FB00FFF47D /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		CA06F39924DF2E4E00FFF47D /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
+		CA06F39B24DF422900FFF47D /* DeviceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetail.swift; sourceTree = "<group>"; };
 		CA22FF8024DAEA010017FE41 /* BatteryTestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatteryTestVC.storyboard; sourceTree = "<group>"; };
 		CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTest.swift; sourceTree = "<group>"; };
 		CA3E3A1924DA0E7400CCE0A9 /* HomescreenVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomescreenVC.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				CA3E3A1B24DA0E9800CCE0A9 /* DevicesVC.storyboard */,
 				CA06F39924DF2E4E00FFF47D /* Devices.swift */,
+				CA06F39B24DF422900FFF47D /* DeviceDetail.swift */,
 			);
 			path = Devices;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				CA3E3A2024DA108E00CCE0A9 /* Homescreen.swift in Sources */,
 				CA6ED99524DB1E83000A5043 /* StartTimer.swift in Sources */,
 				CA22FF8324DAEA1A0017FE41 /* BatteryTest.swift in Sources */,
+				CA06F39C24DF422900FFF47D /* DeviceDetail.swift in Sources */,
 				CA3E3A2924DA1BD000CCE0A9 /* Charging.swift in Sources */,
 				CA7DFA3E24DA05FD00B80F18 /* AppDelegate.swift in Sources */,
 				CA7DFA4024DA05FD00B80F18 /* SceneDelegate.swift in Sources */,

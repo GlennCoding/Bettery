@@ -77,11 +77,85 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="hmy-4p-iTG" id="Mry-ts-iRi"/>
+                        <segue destination="f41-ht-0Hj" kind="show" identifier="DeviceDetail" id="PKc-I9-zbj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Wd-zZ-Ex2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-970" y="-320"/>
+        </scene>
+        <!--Device-->
+        <scene sceneID="GXx-Lb-gbW">
+            <objects>
+                <viewController id="f41-ht-0Hj" customClass="DeviceDetail" customModule="Bettery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zos-6Z-JLt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="kwf-iO-XBv">
+                                <rect key="frame" x="20" y="160" width="374" height="26.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charger Name :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmY-Dy-3fy">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="26.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="235" id="m33-IS-mcK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charger" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipM-YC-sYs">
+                                        <rect key="frame" x="297" y="0.0" width="77" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Od1-29-Nw0">
+                                <rect key="frame" x="20" y="196.5" width="374" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery Loading Speed Per Minute: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evu-sX-s8f">
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="A7s-oN-G6O"/>
+                                            <constraint firstAttribute="width" constant="185" id="JFN-bD-B9o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc4-gY-Ahi">
+                                        <rect key="frame" x="189" y="0.0" width="185" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PqS-Ft-FDO" firstAttribute="trailing" secondItem="kwf-iO-XBv" secondAttribute="trailing" constant="20" id="Dot-Do-fX9"/>
+                            <constraint firstItem="Od1-29-Nw0" firstAttribute="leading" secondItem="zos-6Z-JLt" secondAttribute="leading" constant="20" id="X4b-Rg-DaR"/>
+                            <constraint firstItem="kwf-iO-XBv" firstAttribute="top" secondItem="PqS-Ft-FDO" secondAttribute="top" constant="20" id="Yxb-Rk-ckH"/>
+                            <constraint firstItem="kwf-iO-XBv" firstAttribute="centerX" secondItem="zos-6Z-JLt" secondAttribute="centerX" id="e6F-Xg-dOs"/>
+                            <constraint firstItem="Od1-29-Nw0" firstAttribute="top" secondItem="kwf-iO-XBv" secondAttribute="bottom" constant="10" id="lpg-JC-ceJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Od1-29-Nw0" secondAttribute="trailing" constant="20" id="nBz-C7-Icl"/>
+                            <constraint firstItem="kwf-iO-XBv" firstAttribute="leading" secondItem="PqS-Ft-FDO" secondAttribute="leading" constant="20" id="nDZ-0H-2Nv"/>
+                            <constraint firstItem="Od1-29-Nw0" firstAttribute="centerX" secondItem="zos-6Z-JLt" secondAttribute="centerX" id="y7B-if-4jx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PqS-Ft-FDO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Device" id="xeN-3y-bFe"/>
+                    <connections>
+                        <outlet property="BatteryPerMinute" destination="oc4-gY-Ahi" id="lTl-uO-dic"/>
+                        <outlet property="ChargerName" destination="ipM-YC-sYs" id="bco-zR-VVf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aL6-TR-f8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42.028985507246382" y="-319.41964285714283"/>
         </scene>
         <!--BatteryTestVC-->
         <scene sceneID="OVF-na-rfI">
@@ -89,7 +163,7 @@
                 <viewControllerPlaceholder storyboardName="BatteryTestVC" id="eC5-QR-8f3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZVb-7n-79M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66" y="-611"/>
+            <point key="canvasLocation" x="-971" y="208"/>
         </scene>
     </scenes>
     <resources>

@@ -13,6 +13,8 @@ class Devices: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
+    //var devices: [Device] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,14 +41,12 @@ class Devices: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let device = deviceArray![indexPath.row]
+        performSegue(withIdentifier: "DeviceDetail", sender: device)
     }
-    */
 
 }
