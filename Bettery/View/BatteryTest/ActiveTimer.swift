@@ -13,7 +13,7 @@ class ActiveTimer: UIViewController {
     var deviceName: String = ""
     var chargerName: String = ""
     var batteryStart: Float = 0
-    var batteryEnd: Float = 0
+    var testTime: Float = 0
 
     @IBOutlet weak var CountDownLabel: UILabel!
     
@@ -23,7 +23,7 @@ class ActiveTimer: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print("\(deviceName), \(chargerName), \(batteryStart), \(batteryEnd)")
+        print("\(deviceName), \(chargerName), \(batteryStart), \(testTime)")
     }
     
 
