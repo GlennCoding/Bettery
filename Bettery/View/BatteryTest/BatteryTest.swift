@@ -19,11 +19,6 @@ class BatteryTest: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        let device = Device(deviceName: "iPhone", chargerName: "Supercharger", batteryPerMinute: 4)
-        deviceArray?.append(device)
-        print(deviceArray!)
     }
     
     

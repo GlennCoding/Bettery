@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SLF-qV-Otw">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,7 +15,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="nsb-QC-dsv">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -32,22 +32,22 @@
             <objects>
                 <viewController id="L5a-9w-1RX" customClass="Devices" customModule="Bettery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cg8-Gc-uFi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hmy-4p-iTG">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="deviceCell" textLabel="9PM-Kk-SDj" style="IBUITableViewCellStyleDefault" id="8Q7-ny-x1Y">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Q7-ny-x1Y" id="OY2-aW-cUf">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9PM-Kk-SDj">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -89,14 +89,14 @@
             <objects>
                 <viewController id="f41-ht-0Hj" customClass="DeviceDetail" customModule="Bettery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zos-6Z-JLt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="kwf-iO-XBv">
-                                <rect key="frame" x="20" y="160" width="374" height="26.5"/>
+                                <rect key="frame" x="20" y="115.99999999999999" width="374" height="26.333333333333329"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charger Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmY-Dy-3fy">
-                                        <rect key="frame" x="0.0" y="0.0" width="160" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="26.333333333333332"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="160" id="5kr-bu-PUm"/>
                                         </constraints>
@@ -105,7 +105,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charger" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipM-YC-sYs">
-                                        <rect key="frame" x="222" y="0.0" width="152" height="26.5"/>
+                                        <rect key="frame" x="222" y="0.0" width="152" height="26.333333333333332"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="155" id="vwr-qs-13t"/>
                                         </constraints>
@@ -116,7 +116,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Od1-29-Nw0">
-                                <rect key="frame" x="20" y="196.5" width="374" height="60"/>
+                                <rect key="frame" x="20" y="152.33333333333334" width="374" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery Loading Speed Per Minute: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evu-sX-s8f">
                                         <rect key="frame" x="0.0" y="0.0" width="185" height="60"/>
@@ -137,7 +137,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrc-o3-Ag8">
-                                <rect key="frame" x="30" y="693" width="354" height="45"/>
+                                <rect key="frame" x="30" y="567" width="354" height="45"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="80I-gJ-Hjh"/>
@@ -153,7 +153,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="FOi-f1-H1h" kind="show" identifier="DetailToCharging" id="nx6-fn-tv9"/>
+                                    <segue destination="ViR-Ek-esU" kind="show" identifier="DetailToCharger" id="zPd-To-24k"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -173,7 +173,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PqS-Ft-FDO"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Device" id="xeN-3y-bFe"/>
+                    <navigationItem key="navigationItem" title="Device" id="xeN-3y-bFe">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="bmo-rq-ZYA"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="BatteryPerMinute" destination="oc4-gY-Ahi" id="lTl-uO-dic"/>
                         <outlet property="ChargerName" destination="ipM-YC-sYs" id="bco-zR-VVf"/>
@@ -183,6 +185,123 @@
             </objects>
             <point key="canvasLocation" x="-42.028985507246382" y="-319.41964285714283"/>
         </scene>
+        <!--Charge Settings-->
+        <scene sceneID="TGr-GJ-BlG">
+            <objects>
+                <viewController id="ViR-Ek-esU" customClass="ChargeSettings" customModule="Bettery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ZD-cP-YgW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDv-hk-ll4">
+                                <rect key="frame" x="30" y="567" width="354" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="302-eo-MLe"/>
+                                    <constraint firstAttribute="height" constant="45" id="GwT-zv-hRO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Start Charging">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Mg8-eK-3hu" kind="show" id="W9F-Al-TnN"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="E3O-7K-8ey">
+                                <rect key="frame" x="24" y="279" width="366" height="218"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3PF-fz-a69" userLabel="Battery Input Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="75.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Battery Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKk-vi-1ab">
+                                                <rect key="frame" x="46" y="0.0" width="274" height="26.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="741-lB-7HY" userLabel="Current Battery Percentage Input Field">
+                                                <rect key="frame" x="0.0" y="41.333333333333314" width="366" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="CurrentBatteryEnd:" destination="ViR-Ek-esU" eventType="editingDidEnd" id="oUI-Rq-1L3"/>
+                                                    <outlet property="delegate" destination="ViR-Ek-esU" id="aHl-uO-uNT"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="741-lB-7HY" secondAttribute="trailing" id="KuV-tH-RBU"/>
+                                            <constraint firstItem="741-lB-7HY" firstAttribute="leading" secondItem="3PF-fz-a69" secondAttribute="leading" id="krJ-TE-yAY"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gbq-YK-ind" userLabel="Battery Input Stack">
+                                        <rect key="frame" x="0.0" y="105.33333333333331" width="366" height="112.66666666666669"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Battery Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kl-GS-FoS">
+                                                <rect key="frame" x="52.666666666666657" y="0.0" width="260.66666666666674" height="26.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQE-Mk-8lf">
+                                                <rect key="frame" x="160.66666666666666" y="41.333333333333371" width="45" height="26.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1Zs-Ng-7PC">
+                                                <rect key="frame" x="-2" y="82.666666666666686" width="370" height="31"/>
+                                                <connections>
+                                                    <action selector="SliderChanged:" destination="ViR-Ek-esU" eventType="valueChanged" id="bwr-3f-j9F"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1Zs-Ng-7PC" firstAttribute="leading" secondItem="gbq-YK-ind" secondAttribute="leading" id="BOe-aC-zgN"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Zs-Ng-7PC" secondAttribute="trailing" id="HwD-W8-kX0"/>
+                                            <constraint firstItem="nQE-Mk-8lf" firstAttribute="centerX" secondItem="gbq-YK-ind" secondAttribute="centerX" id="f63-bc-eB1"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To get started, please enter the information down below. Make sure to plug in your device as soon as you press start." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hs-Ip-JR9">
+                                <rect key="frame" x="30" y="121" width="354" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1Hs-Ip-JR9" firstAttribute="top" secondItem="ZCk-ix-Cc8" secondAttribute="top" constant="25" id="7Pb-10-0Rc"/>
+                            <constraint firstItem="E3O-7K-8ey" firstAttribute="centerY" secondItem="0ZD-cP-YgW" secondAttribute="centerY" constant="20" id="JXS-Rb-a2F"/>
+                            <constraint firstItem="EDv-hk-ll4" firstAttribute="leading" secondItem="ZCk-ix-Cc8" secondAttribute="leading" constant="30" id="cTX-cW-x1P"/>
+                            <constraint firstItem="1Hs-Ip-JR9" firstAttribute="leading" secondItem="ZCk-ix-Cc8" secondAttribute="leading" constant="30" id="g2m-Sz-akL"/>
+                            <constraint firstItem="ZCk-ix-Cc8" firstAttribute="trailing" secondItem="1Hs-Ip-JR9" secondAttribute="trailing" constant="30" id="grO-ku-oWI"/>
+                            <constraint firstItem="ZCk-ix-Cc8" firstAttribute="bottom" secondItem="EDv-hk-ll4" secondAttribute="bottom" constant="75" id="jbF-Gb-A6f"/>
+                            <constraint firstItem="ZCk-ix-Cc8" firstAttribute="trailing" secondItem="EDv-hk-ll4" secondAttribute="trailing" constant="30" id="nMZ-Bq-2CM"/>
+                            <constraint firstItem="E3O-7K-8ey" firstAttribute="centerX" secondItem="0ZD-cP-YgW" secondAttribute="centerX" id="sU3-Vs-l1r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZCk-ix-Cc8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Charge Settings" id="CCF-pU-Fdl"/>
+                    <connections>
+                        <outlet property="CurrentBattery" destination="741-lB-7HY" id="U95-KJ-EI0"/>
+                        <outlet property="Slider" destination="1Zs-Ng-7PC" id="hBW-2h-TyC"/>
+                        <outlet property="SliderLabel" destination="nQE-Mk-8lf" id="cFM-j3-xMZ"/>
+                        <outlet property="StartButton" destination="EDv-hk-ll4" id="h2i-ma-zR9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Irq-uW-ZY0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="-320"/>
+        </scene>
         <!--BatteryTestVC-->
         <scene sceneID="OVF-na-rfI">
             <objects>
@@ -191,15 +310,74 @@
             </objects>
             <point key="canvasLocation" x="-971" y="208"/>
         </scene>
-        <!--ChargingVC-->
-        <scene sceneID="69f-qM-GI9">
+        <!--Active Charging-->
+        <scene sceneID="ZgT-y9-pJo">
             <objects>
-                <viewControllerPlaceholder storyboardName="ChargingVC" id="FOi-f1-H1h" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="CzX-ez-aTl"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WLN-ia-E3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="Mg8-eK-3hu" customClass="ActiveCharging" customModule="Bettery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2uh-rt-Quq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfw-Nc-OIb">
+                                <rect key="frame" x="30" y="121" width="354" height="81.333333333333314"/>
+                                <string key="text">This timer is based on how long your device needs to charge, to achieve the target battery percentage. You will get notified, when the timer is over.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYD-p8-39f">
+                                <rect key="frame" x="30" y="567" width="354" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="QpX-jA-N4Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Dismiss:" destination="Mg8-eK-3hu" eventType="touchUpInside" id="nrC-aa-OAb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzD-U7-aHD">
+                                <rect key="frame" x="139" y="338" width="136" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="PO3-ow-jqJ"/>
+                                    <constraint firstAttribute="height" constant="60" id="dnY-ef-uD2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="13H-6f-569" firstAttribute="trailing" secondItem="Rfw-Nc-OIb" secondAttribute="trailing" constant="30" id="4kY-HL-bWw"/>
+                            <constraint firstItem="qzD-U7-aHD" firstAttribute="centerX" secondItem="2uh-rt-Quq" secondAttribute="centerX" id="AOE-h1-Blc"/>
+                            <constraint firstItem="zYD-p8-39f" firstAttribute="leading" secondItem="13H-6f-569" secondAttribute="leading" constant="30" id="Tdh-az-a7M"/>
+                            <constraint firstItem="13H-6f-569" firstAttribute="trailing" secondItem="zYD-p8-39f" secondAttribute="trailing" constant="30" id="ayy-fa-eLm"/>
+                            <constraint firstItem="13H-6f-569" firstAttribute="bottom" secondItem="zYD-p8-39f" secondAttribute="bottom" constant="75" id="byB-mj-pwi"/>
+                            <constraint firstItem="qzD-U7-aHD" firstAttribute="centerY" secondItem="2uh-rt-Quq" secondAttribute="centerY" id="gy2-Zm-7jl"/>
+                            <constraint firstItem="Rfw-Nc-OIb" firstAttribute="top" secondItem="13H-6f-569" secondAttribute="top" constant="25" id="jOZ-kV-CHe"/>
+                            <constraint firstItem="Rfw-Nc-OIb" firstAttribute="leading" secondItem="13H-6f-569" secondAttribute="leading" constant="30" id="kBO-25-zii"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="13H-6f-569"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Active Charging" id="J2E-d5-U9V"/>
+                    <connections>
+                        <outlet property="CountDownLabel" destination="qzD-U7-aHD" id="hqD-wI-MFV"/>
+                        <outlet property="DismissButton" destination="zYD-p8-39f" id="XQz-oj-bWj"/>
+                        <outlet property="TopLabel" destination="Rfw-Nc-OIb" id="fgg-qW-ZPK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WcM-Wh-v7v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="662" y="-319"/>
+            <point key="canvasLocation" x="1738" y="-319"/>
         </scene>
     </scenes>
     <resources>

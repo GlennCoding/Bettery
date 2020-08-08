@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             deviceArray = [Device]()
         }
         
+        deviceArray?.append(contentsOf: [Device(deviceName: "Smartwatch", chargerName: "7.5 watts", batteryPerMinute: 4)])
+        
         
         return true
     }

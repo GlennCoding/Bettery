@@ -27,5 +27,17 @@ class DeviceDetail: UIViewController {
         ChargerName.text = device!.chargerName
         BatteryPerMinute.text = "\(device!.batteryPerMinute)"
     }
+    
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let DestinationVC = segue.destination as? ChargeSettings {
+            DestinationVC.deviceName = device!.deviceName
+            DestinationVC.chargerName = device!.chargerName
+            DestinationVC.batteryPerMinute = device!.batteryPerMinute
+        }
+    }
+
 
 }

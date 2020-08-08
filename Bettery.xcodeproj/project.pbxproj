@@ -16,8 +16,8 @@
 		CA3E3A1A24DA0E7400CCE0A9 /* HomescreenVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1924DA0E7400CCE0A9 /* HomescreenVC.storyboard */; };
 		CA3E3A1C24DA0E9800CCE0A9 /* DevicesVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1B24DA0E9800CCE0A9 /* DevicesVC.storyboard */; };
 		CA3E3A2024DA108E00CCE0A9 /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */; };
-		CA3E3A2724DA1B4400CCE0A9 /* ChargingVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A2624DA1B4400CCE0A9 /* ChargingVC.storyboard */; };
-		CA3E3A2924DA1BD000CCE0A9 /* Charging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */; };
+		CA62473B24DF5C3D00473DA2 /* ChargeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62473A24DF5C3D00473DA2 /* ChargeSettings.swift */; };
+		CA62473D24DF62A300473DA2 /* ActiveCharging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62473C24DF62A300473DA2 /* ActiveCharging.swift */; };
 		CA64BAAC24DED6E700073970 /* ActiveTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64BAAB24DED6E700073970 /* ActiveTimer.swift */; };
 		CA6ED99524DB1E83000A5043 /* StartTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6ED99424DB1E83000A5043 /* StartTimer.swift */; };
 		CA7DFA3E24DA05FD00B80F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFA3D24DA05FD00B80F18 /* AppDelegate.swift */; };
@@ -37,8 +37,8 @@
 		CA3E3A1924DA0E7400CCE0A9 /* HomescreenVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomescreenVC.storyboard; sourceTree = "<group>"; };
 		CA3E3A1B24DA0E9800CCE0A9 /* DevicesVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DevicesVC.storyboard; sourceTree = "<group>"; };
 		CA3E3A1F24DA108E00CCE0A9 /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
-		CA3E3A2624DA1B4400CCE0A9 /* ChargingVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChargingVC.storyboard; sourceTree = "<group>"; };
-		CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charging.swift; sourceTree = "<group>"; };
+		CA62473A24DF5C3D00473DA2 /* ChargeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeSettings.swift; sourceTree = "<group>"; };
+		CA62473C24DF62A300473DA2 /* ActiveCharging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveCharging.swift; sourceTree = "<group>"; };
 		CA64BAAB24DED6E700073970 /* ActiveTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTimer.swift; sourceTree = "<group>"; };
 		CA6ED99424DB1E83000A5043 /* StartTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTimer.swift; sourceTree = "<group>"; };
 		CA7DFA3A24DA05FD00B80F18 /* Bettery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bettery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +92,8 @@
 				CA3E3A1B24DA0E9800CCE0A9 /* DevicesVC.storyboard */,
 				CA06F39924DF2E4E00FFF47D /* Devices.swift */,
 				CA06F39B24DF422900FFF47D /* DeviceDetail.swift */,
+				CA62473A24DF5C3D00473DA2 /* ChargeSettings.swift */,
+				CA62473C24DF62A300473DA2 /* ActiveCharging.swift */,
 			);
 			path = Devices;
 			sourceTree = "<group>";
@@ -107,15 +109,6 @@
 			path = BatteryTest;
 			sourceTree = "<group>";
 		};
-		CA22FF8724DAEA6F0017FE41 /* Charging */ = {
-			isa = PBXGroup;
-			children = (
-				CA3E3A2624DA1B4400CCE0A9 /* ChargingVC.storyboard */,
-				CA3E3A2824DA1BD000CCE0A9 /* Charging.swift */,
-			);
-			path = Charging;
-			sourceTree = "<group>";
-		};
 		CA3E3A1524DA0DFB00CCE0A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +118,6 @@
 				CA22FF8424DAEA2E0017FE41 /* Homescreen */,
 				CA22FF8524DAEA3D0017FE41 /* Devices */,
 				CA22FF8624DAEA5B0017FE41 /* BatteryTest */,
-				CA22FF8724DAEA6F0017FE41 /* Charging */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,7 +229,6 @@
 				CA7DFA4A24DA060100B80F18 /* LaunchScreen.storyboard in Resources */,
 				CA3E3A1A24DA0E7400CCE0A9 /* HomescreenVC.storyboard in Resources */,
 				CA7DFA4724DA060100B80F18 /* Assets.xcassets in Resources */,
-				CA3E3A2724DA1B4400CCE0A9 /* ChargingVC.storyboard in Resources */,
 				CA3E3A1C24DA0E9800CCE0A9 /* DevicesVC.storyboard in Resources */,
 				CA7DFA4524DA05FD00B80F18 /* Main.storyboard in Resources */,
 			);
@@ -255,10 +246,11 @@
 				CA6ED99524DB1E83000A5043 /* StartTimer.swift in Sources */,
 				CA22FF8324DAEA1A0017FE41 /* BatteryTest.swift in Sources */,
 				CA06F39C24DF422900FFF47D /* DeviceDetail.swift in Sources */,
-				CA3E3A2924DA1BD000CCE0A9 /* Charging.swift in Sources */,
 				CA7DFA3E24DA05FD00B80F18 /* AppDelegate.swift in Sources */,
+				CA62473D24DF62A300473DA2 /* ActiveCharging.swift in Sources */,
 				CA7DFA4024DA05FD00B80F18 /* SceneDelegate.swift in Sources */,
 				CA06F39A24DF2E4E00FFF47D /* Devices.swift in Sources */,
+				CA62473B24DF5C3D00473DA2 /* ChargeSettings.swift in Sources */,
 				CA06F39324DF229E00FFF47D /* Constants.swift in Sources */,
 				CA06F39624DF22FB00FFF47D /* Device.swift in Sources */,
 			);
