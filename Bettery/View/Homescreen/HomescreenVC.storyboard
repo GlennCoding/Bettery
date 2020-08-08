@@ -55,7 +55,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="aJ9-ML-1l0" kind="show" id="3oe-Ij-qW1"/>
+                                                    <segue destination="ukz-KX-jAU" kind="show" id="R8W-v1-l6X"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uza-v8-P2f">
@@ -97,15 +97,15 @@
             </objects>
             <point key="canvasLocation" x="-737.68115942028987" y="-2535.2678571428569"/>
         </scene>
-        <!--ChargingVC-->
-        <scene sceneID="aR9-ou-ur3">
+        <!--DevicesVC-->
+        <scene sceneID="ctq-43-z35">
             <objects>
-                <viewControllerPlaceholder storyboardName="ChargingVC" id="aJ9-ML-1l0" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="U7D-XM-4pb"/>
+                <viewControllerPlaceholder storyboardName="DevicesVC" id="ukz-KX-jAU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="o8R-ZM-X6s"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="agh-BB-3Qv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vht-HV-Y5h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-18" y="-2538"/>
+            <point key="canvasLocation" x="19" y="-2564"/>
         </scene>
         <!--BatteryTestVC-->
         <scene sceneID="N0h-tP-QZq">

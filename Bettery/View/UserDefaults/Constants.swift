@@ -12,13 +12,14 @@ import Foundation
 
 var deviceArray: [Device]?
 
-func saveData(deviceArray:[Device]) {
+func saveData(deviceArray: [Device]) {
     UserDefaults.standard.set(deviceArray, forKey: "deviceArray")
 }
 
 func fetchData() -> [Device]? {
-    if let device = UserDefaults.standard.array(forKey: "deviceArray") as? [Device] {
-        return device
+    if let deviceArray = UserDefaults.standard.array(forKey: "deviceArray") as? [Device] {
+        print("Reloaded")
+        return deviceArray
     }
     else {
         return nil
