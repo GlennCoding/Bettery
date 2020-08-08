@@ -155,7 +155,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Uv2-ab-fhp" userLabel="Timer Stack View">
-                                <rect key="frame" x="30" y="298" width="315" height="111"/>
+                                <rect key="frame" x="30" y="305" width="315" height="111"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdm-bS-gVG">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="60"/>
@@ -188,7 +188,7 @@
                             <constraint firstItem="Izg-Mc-4kM" firstAttribute="leading" secondItem="Ttl-Jc-UFD" secondAttribute="leading" constant="30" id="C5F-f7-V07"/>
                             <constraint firstItem="pyq-Oj-X1T" firstAttribute="leading" secondItem="Kg5-E4-5lG" secondAttribute="leading" constant="30" id="Cy8-IX-wHt"/>
                             <constraint firstItem="pyq-Oj-X1T" firstAttribute="centerX" secondItem="Ttl-Jc-UFD" secondAttribute="centerX" id="D0O-oB-Js9"/>
-                            <constraint firstItem="Uv2-ab-fhp" firstAttribute="centerY" secondItem="Ttl-Jc-UFD" secondAttribute="centerY" constant="20" id="TPC-ij-uxL"/>
+                            <constraint firstItem="Uv2-ab-fhp" firstAttribute="centerY" secondItem="Ttl-Jc-UFD" secondAttribute="centerY" constant="27" id="TPC-ij-uxL"/>
                             <constraint firstItem="Uv2-ab-fhp" firstAttribute="leading" secondItem="Kg5-E4-5lG" secondAttribute="leading" constant="30" id="aQm-EW-OLg"/>
                             <constraint firstItem="Kg5-E4-5lG" firstAttribute="trailing" secondItem="pyq-Oj-X1T" secondAttribute="trailing" constant="30" id="bLC-Fx-yAM"/>
                             <constraint firstItem="Izg-Mc-4kM" firstAttribute="top" secondItem="Kg5-E4-5lG" secondAttribute="top" constant="25" id="eCM-g9-my7"/>
@@ -243,27 +243,50 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfS-gF-fVP">
-                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pv5-5q-5aD">
+                                <rect key="frame" x="145.5" y="303.5" width="84" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="XwC-tV-zUM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrz-YY-ypH">
+                                <rect key="frame" x="30" y="547" width="315" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="sT3-Pu-icw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nfS-gF-fVP" firstAttribute="centerY" secondItem="529-QJ-GqC" secondAttribute="centerY" id="22i-gd-g2n"/>
+                            <constraint firstItem="pv5-5q-5aD" firstAttribute="centerY" secondItem="529-QJ-GqC" secondAttribute="centerY" id="06L-Ij-ap6"/>
                             <constraint firstItem="hg5-sp-QwS" firstAttribute="leading" secondItem="529-QJ-GqC" secondAttribute="leading" constant="30" id="3tU-Aw-ilO"/>
+                            <constraint firstItem="qRX-tR-rIu" firstAttribute="bottom" secondItem="zrz-YY-ypH" secondAttribute="bottom" constant="75" id="5ro-cf-Vh8"/>
+                            <constraint firstItem="pv5-5q-5aD" firstAttribute="centerX" secondItem="529-QJ-GqC" secondAttribute="centerX" id="6fq-m8-f3q"/>
                             <constraint firstItem="hg5-sp-QwS" firstAttribute="centerX" secondItem="529-QJ-GqC" secondAttribute="centerX" id="9QP-wG-7et"/>
+                            <constraint firstItem="zrz-YY-ypH" firstAttribute="centerX" secondItem="529-QJ-GqC" secondAttribute="centerX" id="GVj-Ih-o6e"/>
                             <constraint firstAttribute="trailing" secondItem="hg5-sp-QwS" secondAttribute="trailing" constant="30" id="NSH-7Z-cTY"/>
+                            <constraint firstItem="qRX-tR-rIu" firstAttribute="trailing" secondItem="zrz-YY-ypH" secondAttribute="trailing" constant="30" id="UDK-mk-dKf"/>
                             <constraint firstItem="hg5-sp-QwS" firstAttribute="top" secondItem="qRX-tR-rIu" secondAttribute="top" constant="25" id="ffn-FB-Vi9"/>
-                            <constraint firstItem="nfS-gF-fVP" firstAttribute="centerX" secondItem="529-QJ-GqC" secondAttribute="centerX" id="yJ9-GE-vGc"/>
+                            <constraint firstItem="zrz-YY-ypH" firstAttribute="leading" secondItem="qRX-tR-rIu" secondAttribute="leading" constant="30" id="wj3-Du-y3b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qRX-tR-rIu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Active Timer" id="MPT-VT-ro1"/>
                     <connections>
-                        <outlet property="TestLabel" destination="nfS-gF-fVP" id="Hcu-Du-Zkf"/>
+                        <outlet property="CountDownLabel" destination="pv5-5q-5aD" id="fwB-9t-jiM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ewm-cw-kns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

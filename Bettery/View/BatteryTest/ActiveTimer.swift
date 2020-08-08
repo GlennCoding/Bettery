@@ -15,13 +15,15 @@ class ActiveTimer: UIViewController {
     var batteryStart: Float = 0
     var batteryEnd: Float = 0
 
-    @IBOutlet weak var TestLabel: UILabel!
+    @IBOutlet weak var CountDownLabel: UILabel!
+    
+    var count = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        TestLabel.text = "\(deviceName), \(chargerName), \(batteryStart), \(batteryEnd)"
+        print("\(deviceName), \(chargerName), \(batteryStart), \(batteryEnd)")
     }
     
 

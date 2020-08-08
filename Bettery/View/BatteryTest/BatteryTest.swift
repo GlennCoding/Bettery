@@ -23,11 +23,6 @@ class BatteryTest: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func CurrentBattery(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let invalidCharacters = CharacterSet(charactersIn: "0123456789").inverted
-        return string.rangeOfCharacter(from: invalidCharacters) == nil
-    }
-    
     
     // MARK: - Navigation
 
