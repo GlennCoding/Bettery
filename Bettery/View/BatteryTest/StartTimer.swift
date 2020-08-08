@@ -9,9 +9,12 @@
 import UIKit
 
 class StartTimer: UIViewController {
+    
+    var deviceName: String = ""
+    var chargerName: String = ""
+    var batteryStart: Float = 0
 
     @IBOutlet weak var timerLabel: UILabel!
-    
     @IBOutlet weak var timeSlider: UISlider!
     
     override func viewDidLoad() {
@@ -27,14 +30,16 @@ class StartTimer: UIViewController {
         
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let DestinationVC = segue.destination as? ActiveTimer {
+            DestinationVC.deviceName = deviceName
+            DestinationVC.chargerName = chargerName
+            DestinationVC.batteryStart = batteryStart
+            DestinationVC.batteryEnd = timeSlider.value
+        }
     }
-    */
 
 }

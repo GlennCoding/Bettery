@@ -1,18 +1,27 @@
 //
-//  Devices.swift
+//  ActiveTimer.swift
 //  Bettery
 //
-//  Created by Glenn Gregor on 05.08.20.
+//  Created by Glenn Gregor on 08.08.20.
 //  Copyright © 2020 Glenn Gregor. All rights reserved.
 //
 
 import UIKit
 
-class Devices: UIViewController {
+class ActiveTimer: UIViewController {
+    
+    var deviceName: String = ""
+    var chargerName: String = ""
+    var batteryStart: Float = 0
+    var batteryEnd: Float = 0
 
+    @IBOutlet weak var TestLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
+        TestLabel.text = "\(deviceName), \(chargerName), \(batteryStart), \(batteryEnd)"
     }
     
 

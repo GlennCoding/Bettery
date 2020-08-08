@@ -28,6 +28,9 @@
                                         <rect key="frame" x="0.0" y="41.5" width="315" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="x7n-q5-jT3" id="eyL-ND-WcR"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charger Name (optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whu-4R-wJn">
                                         <rect key="frame" x="0.0" y="90.5" width="248" height="26.5"/>
@@ -61,7 +64,7 @@
                                     <constraint firstItem="iiN-jg-lqz" firstAttribute="leading" secondItem="qhA-2D-4Tg" secondAttribute="leading" id="pZs-cI-hko"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooB-xI-7gu">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooB-xI-7gu">
                                 <rect key="frame" x="30" y="547" width="315" height="45"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -107,6 +110,12 @@
                     <navigationItem key="navigationItem" title="Battery Test" id="ns9-HD-Bv6">
                         <barButtonItem key="backBarButtonItem" title="Back" id="pf7-qn-abA"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ChargerName" destination="iiN-jg-lqz" id="7VB-fP-NL4"/>
+                        <outlet property="CurrentBattery" destination="Gor-3H-5af" id="khm-Qp-Qu5"/>
+                        <outlet property="DeviceName" destination="VxD-Bn-6zr" id="UHJ-N4-bWB"/>
+                        <outlet property="NextButton" destination="ooB-xI-7gu" id="jCq-VU-1dx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqo-v5-yZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -222,7 +231,7 @@
         <!--Active Timer-->
         <scene sceneID="I6K-hU-yVp">
             <objects>
-                <viewController id="Mr6-O4-NLr" sceneMemberID="viewController">
+                <viewController id="Mr6-O4-NLr" customClass="ActiveTimer" customModule="Bettery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="529-QJ-GqC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,17 +243,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfS-gF-fVP">
+                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="nfS-gF-fVP" firstAttribute="centerY" secondItem="529-QJ-GqC" secondAttribute="centerY" id="22i-gd-g2n"/>
                             <constraint firstItem="hg5-sp-QwS" firstAttribute="leading" secondItem="529-QJ-GqC" secondAttribute="leading" constant="30" id="3tU-Aw-ilO"/>
                             <constraint firstItem="hg5-sp-QwS" firstAttribute="centerX" secondItem="529-QJ-GqC" secondAttribute="centerX" id="9QP-wG-7et"/>
                             <constraint firstAttribute="trailing" secondItem="hg5-sp-QwS" secondAttribute="trailing" constant="30" id="NSH-7Z-cTY"/>
                             <constraint firstItem="hg5-sp-QwS" firstAttribute="top" secondItem="qRX-tR-rIu" secondAttribute="top" constant="25" id="ffn-FB-Vi9"/>
+                            <constraint firstItem="nfS-gF-fVP" firstAttribute="centerX" secondItem="529-QJ-GqC" secondAttribute="centerX" id="yJ9-GE-vGc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qRX-tR-rIu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Active Timer" id="MPT-VT-ro1"/>
+                    <connections>
+                        <outlet property="TestLabel" destination="nfS-gF-fVP" id="Hcu-Du-Zkf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ewm-cw-kns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
