@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA06F39324DF229E00FFF47D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F39224DF229E00FFF47D /* Constants.swift */; };
 		CA22FF8124DAEA010017FE41 /* BatteryTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA22FF8024DAEA010017FE41 /* BatteryTestVC.storyboard */; };
 		CA22FF8324DAEA1A0017FE41 /* BatteryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */; };
 		CA3E3A1A24DA0E7400CCE0A9 /* HomescreenVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1924DA0E7400CCE0A9 /* HomescreenVC.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA06F39224DF229E00FFF47D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CA22FF8024DAEA010017FE41 /* BatteryTestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatteryTestVC.storyboard; sourceTree = "<group>"; };
 		CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTest.swift; sourceTree = "<group>"; };
 		CA3E3A1924DA0E7400CCE0A9 /* HomescreenVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomescreenVC.storyboard; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA06F39124DF21E500FFF47D /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				CA06F39224DF229E00FFF47D /* Constants.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 		CA22FF8424DAEA2E0017FE41 /* Homescreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		CA3E3A1524DA0DFB00CCE0A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA06F39124DF21E500FFF47D /* UserDefaults */,
 				CAF27EA424DC267200B1E45F /* Main */,
 				CA22FF8424DAEA2E0017FE41 /* Homescreen */,
 				CA22FF8524DAEA3D0017FE41 /* Devices */,
@@ -233,6 +244,7 @@
 				CA3E3A2924DA1BD000CCE0A9 /* Charging.swift in Sources */,
 				CA7DFA3E24DA05FD00B80F18 /* AppDelegate.swift in Sources */,
 				CA7DFA4024DA05FD00B80F18 /* SceneDelegate.swift in Sources */,
+				CA06F39324DF229E00FFF47D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
