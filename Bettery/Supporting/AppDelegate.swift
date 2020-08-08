@@ -43,11 +43,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
-        saveData(deviceArray: deviceArray ?? [])
+        saveData(deviceArray: deviceArray!)
     }
     
     func applicationWillTerminate(_ application: UIApplication) {
-        saveData(deviceArray: deviceArray ?? [])
+        saveData(deviceArray: deviceArray!)
     }
 
 //    // MARK: - Core Data stack

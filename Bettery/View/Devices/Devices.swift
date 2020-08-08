@@ -8,14 +8,34 @@
 
 import UIKit
 
-class Devices: UIViewController {
+class Devices: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return deviceArray?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "deviceCell")
+        if let device = deviceArray {
+            cell.textLabel?.text = device[indexPath.row].deviceName
+        }
+        return cell
+    }
 
     /*
     // MARK: - Navigation
