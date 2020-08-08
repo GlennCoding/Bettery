@@ -13,17 +13,19 @@ class ActiveTimer: UIViewController {
     var deviceName: String = ""
     var chargerName: String = ""
     var batteryStart: Float = 0
-    var testTime: Float = 0
+    var testTime: Int = 20
+    var countdownTime: Int = 0
 
     @IBOutlet weak var CountDownLabel: UILabel!
     
-    var count = 10
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        countdownTime = testTime
         print("\(deviceName), \(chargerName), \(batteryStart), \(testTime)")
+        
     }
     
 

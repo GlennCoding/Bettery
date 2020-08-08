@@ -38,7 +38,7 @@ class StartTimer: UIViewController {
             DestinationVC.deviceName = deviceName
             DestinationVC.chargerName = chargerName
             DestinationVC.batteryStart = batteryStart
-            DestinationVC.testTime = timeSlider.value
+            DestinationVC.testTime = Int(timeSlider.value)
         }
     }
 
