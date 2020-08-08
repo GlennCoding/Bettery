@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CA06F39324DF229E00FFF47D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F39224DF229E00FFF47D /* Constants.swift */; };
+		CA06F39624DF22FB00FFF47D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F39524DF22FB00FFF47D /* Device.swift */; };
+		CA06F39A24DF2E4E00FFF47D /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F39924DF2E4E00FFF47D /* Devices.swift */; };
 		CA22FF8124DAEA010017FE41 /* BatteryTestVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA22FF8024DAEA010017FE41 /* BatteryTestVC.storyboard */; };
 		CA22FF8324DAEA1A0017FE41 /* BatteryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */; };
 		CA3E3A1A24DA0E7400CCE0A9 /* HomescreenVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3E3A1924DA0E7400CCE0A9 /* HomescreenVC.storyboard */; };
@@ -22,11 +24,12 @@
 		CA7DFA4524DA05FD00B80F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7DFA4324DA05FD00B80F18 /* Main.storyboard */; };
 		CA7DFA4724DA060100B80F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7DFA4624DA060100B80F18 /* Assets.xcassets */; };
 		CA7DFA4A24DA060100B80F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7DFA4824DA060100B80F18 /* LaunchScreen.storyboard */; };
-		CAE659DC24DEFB4600386B02 /* DevicesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE659DB24DEFB4600386B02 /* DevicesTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA06F39224DF229E00FFF47D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CA06F39524DF22FB00FFF47D /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		CA06F39924DF2E4E00FFF47D /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
 		CA22FF8024DAEA010017FE41 /* BatteryTestVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatteryTestVC.storyboard; sourceTree = "<group>"; };
 		CA22FF8224DAEA1A0017FE41 /* BatteryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTest.swift; sourceTree = "<group>"; };
 		CA3E3A1924DA0E7400CCE0A9 /* HomescreenVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomescreenVC.storyboard; sourceTree = "<group>"; };
@@ -43,7 +46,6 @@
 		CA7DFA4624DA060100B80F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA7DFA4924DA060100B80F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA7DFA4B24DA060100B80F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAE659DB24DEFB4600386B02 /* DevicesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,14 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		CA06F39424DF22DF00FFF47D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA06F39524DF22FB00FFF47D /* Device.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CA22FF8424DAEA2E0017FE41 /* Homescreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				CA3E3A1B24DA0E9800CCE0A9 /* DevicesVC.storyboard */,
-				CAE659DB24DEFB4600386B02 /* DevicesTVC.swift */,
+				CA06F39924DF2E4E00FFF47D /* Devices.swift */,
 			);
 			path = Devices;
 			sourceTree = "<group>";
@@ -106,6 +116,7 @@
 		CA3E3A1524DA0DFB00CCE0A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA06F39424DF22DF00FFF47D /* Model */,
 				CA06F39124DF21E500FFF47D /* UserDefaults */,
 				CAF27EA424DC267200B1E45F /* Main */,
 				CA22FF8424DAEA2E0017FE41 /* Homescreen */,
@@ -239,12 +250,13 @@
 				CA64BAAC24DED6E700073970 /* ActiveTimer.swift in Sources */,
 				CA3E3A2024DA108E00CCE0A9 /* Homescreen.swift in Sources */,
 				CA6ED99524DB1E83000A5043 /* StartTimer.swift in Sources */,
-				CAE659DC24DEFB4600386B02 /* DevicesTVC.swift in Sources */,
 				CA22FF8324DAEA1A0017FE41 /* BatteryTest.swift in Sources */,
 				CA3E3A2924DA1BD000CCE0A9 /* Charging.swift in Sources */,
 				CA7DFA3E24DA05FD00B80F18 /* AppDelegate.swift in Sources */,
 				CA7DFA4024DA05FD00B80F18 /* SceneDelegate.swift in Sources */,
+				CA06F39A24DF2E4E00FFF47D /* Devices.swift in Sources */,
 				CA06F39324DF229E00FFF47D /* Constants.swift in Sources */,
+				CA06F39624DF22FB00FFF47D /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -73,6 +73,14 @@ class ActiveTimer: UIViewController {
     }
     
     @IBAction func Save(_ sender: Any) {
+        let batteryPerMinuteCalculation = (Float(BatteryEnd.text!)! - batteryStart) / Float(testTime)
+        let device = Device(deviceName: deviceName, chargerName: chargerName, batteryPerMinute: batteryPerMinuteCalculation)
+        
+        print(device)
+        deviceArray?.append(device)
+        
+        print(deviceArray!)
+        
         CountDownLabel.text = ""
         dismiss(animated: true)
     }

@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+// Different to tutorial: todoList -> deviceArray, [String] -> [Device]
+
+var deviceArray: [Device]?
+
+func saveData(deviceArray:[Device]) {
+    UserDefaults.standard.set(deviceArray, forKey: "deviceArray")
+}
+
+func fetchData() -> [Device]? {
+    if let device = UserDefaults.standard.array(forKey: "deviceArray") as? [Device] {
+        return device
+    }
+    else {
+        return nil
+    }
+}
