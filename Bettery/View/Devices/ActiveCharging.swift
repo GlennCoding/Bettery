@@ -29,14 +29,14 @@ class ActiveCharging: UIViewController {
         
         resetVC()
 
-        print("\(deviceName) + \(chargerName) + \(batteryPerMinute) + \(currentBattery) + \(targetBattery)")
+        //print("\(deviceName) + \(chargerName) + \(batteryPerMinute) + \(currentBattery) + \(targetBattery)")
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ActiveTimer.timerOptions), userInfo: nil, repeats: true)
     }
     
     func resetVC() {
         TopLabel.text = "This timer is based on how long your device needs to charge, to achieve the target battery percentage. You will get notified, when the timer is over."
-        let seconds = ((targetBattery - currentBattery) / batteryPerMinute) * 60
+        let seconds = ((Float(Int(targetBattery)) - currentBattery) / batteryPerMinute) * 60
         countdownTime = Int(seconds)
         displayCountdown()
         
