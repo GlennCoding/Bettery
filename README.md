@@ -1,2 +1,2 @@
 # Bettery
-First Swift projet - Created an app which helps it's users to optimize charging their devices.
+An app that helps it's users to optimize charging their devices.
